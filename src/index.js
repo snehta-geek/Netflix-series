@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import "./index.css";
+import Card from "./Cards";
+import Sdata from "./Serisdata";
+
+
+//if multiple jsx elements are used,then we can enclose them with the help of <div>/ <>(fragment)/ [](array) tag.
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <h1 className="heading-style">List of top 10 Netflix Series</h1>
+    {Sdata.map((val) => {
+      return (
+        <Card
+          imgsrc={val.simg}           //properties of component
+          title={val.stitle}
+          name={val.sname}
+          links={val.slinks}
+        />
+      )
+    })};
+  </>,
+
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
