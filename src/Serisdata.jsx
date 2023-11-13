@@ -7,7 +7,7 @@ const Sdata=[
     },
     {
         sname:"Stranger Things",
-        simg:"https://upload.wikimedia.org/wikipedia/en/f/f7/Stranger_Things_season_2.jpg",
+        simg:"https://m.media-amazon.com/images/M/MV5BMDRjYWI5NTMtZTYzZC00NTg4LWI3NjMtNmI3MTdhMWQ5MGJlXkEyXkFqcGdeQXVyNTg4MDc4Mg@@._V1_FMjpg_UX1000_.jpg",
         stitle:"Netflix Original Series",
         slinks:"https://www.netflix.com/in/title/80057281?source=35"
     },
